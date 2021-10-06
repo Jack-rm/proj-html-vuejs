@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <Header msg="Header!" />
+    <Header />
 
     <Main msg="Main!" />
     
