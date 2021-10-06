@@ -3,9 +3,9 @@
 
     <Header />
 
-    <Main msg="Main!" />
+    <Main />
     
-    <Footer msg="Footer!" />
+    <Footer />
 
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
 <style lang="scss">
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

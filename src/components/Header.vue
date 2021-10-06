@@ -1,11 +1,15 @@
 <template>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
         <div class="col-12 d-flex justify-content-between">
-            <img src="../assets/img/logotype.png" alt="Header main red logo">
-            <ul>
-                <li v-for="(item, index) in headerNavItems" :key="index">{{ item.name }}</li>
-            </ul>
+            <div class="my_logo-box">
+                <img src="../assets/img/logotype.png" alt="Header main red logo">
+            </div>
+            <div class="my_nav-bar">
+                <ul>
+                    <li v-for="(item, index) in headerNavItems" :key="index">{{ item.name.toUpperCase() }}</li>
+                </ul>
+            </div>
         </div>
     </div>
   </div>
@@ -22,7 +26,7 @@ export default {
             
             headerLogo: [
                 {
-                    source: "../assets/img/logotype.png",
+                    source: require('../assets/img/logotype.png'),
                     alt: 'Header main red logo',
                 }
             ],
@@ -51,12 +55,44 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../style/variables.scss";
 @import "../style/general.scss";
 
-ul li {
+.container{
+    background-color: transparent !important;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.my_logo-box{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    & img{
+    height: 20px;
+    }
+}
+
+
+.my_nav-bar{
+    padding-top: 20px;
+
+    & ul {
     list-style-type: none;
-    display: inline-block;
+    }
+
+    & ul li {
+    color: $whiteText;
+    border-top: 3px solid transparent;
+    display: inline;
+    padding-top: 20px;
+    padding-left: 20px;
+
+        &:hover{
+        border-top: 3px solid $whiteText;
+        }
+    }
 }
 </style>
