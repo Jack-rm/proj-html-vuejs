@@ -113,9 +113,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-end">
-          <div class="link-element">
-            <a>get started</a>
-          </div>
+            <button class="my_red-btn">get started</button>
         </div>
       </div>
 
@@ -345,6 +343,22 @@ export default {
   &:hover{
     background-color: $fluoRed;
     border: 4px solid $darkBlueBg;
+    color: $whiteText;
+  }
+}
+
+.my_red-btn{
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  color: $whiteText;
+  padding: 17px 55px 17px 55px;
+  background-color: $fluoRed;
+  border: 4px solid transparent;
+
+  &:hover{
+    background-color: $darkBlueBg;
+    border: 4px solid $fluoGreen;
     color: $whiteText;
   }
 }

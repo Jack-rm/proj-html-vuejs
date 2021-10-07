@@ -7,7 +7,7 @@
             </div>
             <div class="my_nav-bar">
                 <ul>
-                    <li v-for="(item, index) in headerNavItems" :key="index">{{ item.name.toUpperCase() }}</li>
+                    <li v-for="(item, index) in headerNavItems" :key="index"><a href="#">{{ item.name.toUpperCase() }}</a></li>
                 </ul>
             </div>
         </div>
@@ -85,7 +85,6 @@ export default {
     }
 
     & ul li {
-    color: $darkerWhite;
     border-top: 3px solid transparent;
     display: inline;
     padding-top: 20px;
@@ -96,5 +95,12 @@ export default {
         color: $whiteText;
         }
     }
+    
+    & ul li a{
+    text-decoration: none;
+    color: $darkerWhite;
+    }
 }
+
+
 </style>
