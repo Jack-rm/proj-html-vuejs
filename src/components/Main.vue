@@ -106,38 +106,40 @@
       <div class="my_business-box">
         <div class="d-flex justify-content-evenly">
           <div class="my_business-title">
-            <h3>We help t odeliver the business case</h3>
+            <h3>We help to deliver the business case</h3>
           </div>
           <div class="my_business-info">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, voluptate! Sunt eligendi ratione maiores ab, quasi ipsam consectetur nam earum ad aperiam nesciunt, sed neque laudantium et animi quibusdam hic.</p>
           </div>
         </div>
-        <div class="text-end">
-          <button >get started</button>
+        <div class="d-flex justify-content-end">
+          <div class="link-element">
+            <a>get started</a>
+          </div>
         </div>
       </div>
 
     </section>
 
-    <section class="my_consultants-section">
+    <section class="my_projects pt-5">
       
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="d-flex">
-              <div></div>
-              <h6>project</h6>
+            <div class="d-flex align-items-center">
+              <div class="my_decoration-line"></div>
+              <h6 class="pe-3 text-uppercase">project</h6>
             </div>
             
-            <div class="d-flex justify-content-between">
+            <div class="my_project-title d-flex justify-content-between">
             
-              <h3>our Experiment trusted consultants help clients</h3>
+              <h3>our Experiment trusted consultants <br> help clients</h3>
               <div class="d-flex">
-                <div>
-                  <h2>Freccia</h2>
+                <div class="my_arrow-box me-2">
+                  <i class="fas fa-long-arrow-alt-left"></i>
                 </div>
-                <div>
-                  <h2>Freccia</h2>
+                <div class="my_arrow-box">
+                  <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
               </div>
             </div>
@@ -145,62 +147,61 @@
         </div>
         <div class="row">
           <div class="col-4">
-            <p>immagine</p>
+              <img src="../assets/img/DRY-1-790x592.jpg" alt="DRY project img">
           </div>
           <div class="col-4">
-            <p>immagine</p>
+              <img src="../assets/img/221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg" alt="DRY project img">
           </div>
           <div class="col-4">
-            <p>immagine</p>
+              <img src="../assets/img/z1el4c4p-790x592.jpg" alt="DRY project img">
           </div>
         </div>
       </div>
 
     </section>
 
-    <section class="my_customer-info pb-2">
+    <section class="my_customer-info pt-5 pb-3">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between align-items-center">
               <div class="flex-grow-1 text-center">
-                <h5>Testimonial</h5>
+                <h6>Testimonial</h6>
               </div>
               <div class="my_decoration-line">
-                <p>linea</p>
               </div>
             </div>
           </div>
           <div class="col-12">
-            <h3 class="text-end"> What's the customer say about our work</h3>
+            <h3 class="text-end"> What's the customer say <br> about our work</h3>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="my_customer-section mb-5">
+    <section class="my_customer mb-5">
       <div class="container">
 
         <div class="row">
           <div class="col-4">
-            <div>
+            <div class="my_customer-box">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus et vitae rem voluptates ipsum veritatis magni assumenda eum tempore aspernatur corporis dicta, ea fugit, fugiat sit ullam consequatur tenetur? Culpa.</p>
               <h4>Vera Duncan</h4>
-              <p>Amazon inc.</p>
+              <span>Amazon inc.</span>
             </div>
           </div>
           <div class="col-4">
-            <div>
+            <div class="my_customer-box">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus et vitae rem voluptates ipsum veritatis magni assumenda eum tempore aspernatur corporis dicta, ea fugit, fugiat sit ullam consequatur tenetur? Culpa.</p>
               <h4>Vera Duncan</h4>
-              <p>Amazon inc.</p>
+              <span>Amazon inc.</span>
             </div>
           </div>
           <div class="col-4">
-            <div>
+            <div class="my_customer-box">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus et vitae rem voluptates ipsum veritatis magni assumenda eum tempore aspernatur corporis dicta, ea fugit, fugiat sit ullam consequatur tenetur? Culpa.</p>
               <h4>Vera Duncan</h4>
-              <p>Amazon inc.</p>
+              <span>Amazon inc.</span>
             </div>
           </div>
         </div>
@@ -208,7 +209,7 @@
       </div>
     </section>
       
-    <section class="my_news-section pt-5 pb-5">
+    <section class="my_news pt-5 pb-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -217,34 +218,36 @@
               <h6>Blog</h6>
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-12 mb-4">
             <div class="d-flex justify-content-between align-items-center">
               <h3>The recent news you must read it</h3>
-              <button>view all</button>
+              <button class="my_btn">view all</button>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-6">
             <div class="my_news-box">
-              <div class="d-flex flex-column justify-content-evenly">
+              <img src="../assets/img/startup-business-people-and-strategy-board-PAJ3P9K-1390x1042.jpg" alt="First news image">
+              <div class="my_news-info d-flex flex-column justify-content-evenly">
                 <div class="d-flex">
-                  <p>July 4, 2019 </p>
+                  <span>July 4, 2019 </span>
                   <span>by paul</span>
                 </div>
-                <h6>Canadian Consulting Film acquired by UK Giant</h6>
+                <h5 class="pb-3">Canadian Consulting Film acquired by UK Giant</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis deleniti ratione minima ut dolorum, nulla voluptatem sapiente corrupti autem nostrum molestiae, ad praesentium esse obcaecati minus atque, at magnam quidem?</p>
               </div>
             </div>
           </div>
           <div class="col-6">
             <div class="my_news-box">
-              <div class="d-flex flex-column justify-content-evenly">
+              <img src="../assets/img/business-people-working-together-on-project-and-5FHSKBL-1390.jpg" alt="Second news img">
+              <div class="my_news-info d-flex flex-column justify-content-evenly">
                 <div class="d-flex">
-                  <p>July 4, 2019 </p>
+                  <span>July 4, 2019 </span>
                   <span>by paul</span>
                 </div>
-                <h6>Canadian Consulting Film acquired by UK Giant</h6>
+                <h5 class="pb-3">Canadian Consulting Film acquired by UK Giant</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis deleniti ratione minima ut dolorum, nulla voluptatem sapiente corrupti autem nostrum molestiae, ad praesentium esse obcaecati minus atque, at magnam quidem?</p>
               </div>
             </div>
@@ -254,7 +257,7 @@
 
     </section>
 
-    <section class="my_work-section mt-5 p-5">
+    <section class="my_work p-5">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -264,7 +267,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis iste numquam nisi quaerat tenetur aperiam, nihil vero animi quo labore eos explicabo velit, voluptate dolore nesciunt facere consequuntur commodi tempora?</p>
           </div>
           <div class="col-12 text-center">
-            <button>Get Started</button>
+            <button class="my_dark-btn">Get Started</button>
           </div>
         </div>
       </div>
@@ -329,10 +332,27 @@ export default {
   }
 }
 
+.my_dark-btn{
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  color: $whiteText;
+  padding: 17px 55px 17px 55px;
+  background-color: $darkBlueBg;
+  border: 4px solid transparent;
+  margin-bottom: 120px;
+
+  &:hover{
+    background-color: $fluoRed;
+    border: 4px solid $darkBlueBg;
+    color: $whiteText;
+  }
+}
+
 .fas.fa-play {
   margin-left: 35px;
   color: $fluoGreen;
-  padding: 20px 20px;
+  padding: 15px 15px;
   border: 2px solid white;
   border-radius: 50%;
 }
@@ -394,6 +414,8 @@ export default {
 
 .my_about-info{
 
+  padding: 300px 300px 0px 100px;
+
   & h6{
     color: $darkerWhite;
   }
@@ -409,30 +431,182 @@ export default {
     color: $greyText;
     width: 70%;
   }
-
-}
-
-.my_about-info{
-  padding: 300px 300px 300px 100px;
 }
 
 .my_business-box{
-  background-color: lawngreen;
+  background-color: $darkerFluoGreen;
   width: 85%;
 }
 
+.link-element{
+  padding: 17px 55px 17px 55px;
+  background-color: $fluoRed;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
 .my_business-title{
-  width: 500px;
+  width: 400px;
   padding: 100px 0px 50px 0px;
+  color: $darkBlueBg;
+
+  & h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2em;
+  }
 }
 
 .my_business-info{
   width: 500px;
   padding: 100px 0px 50px 0px;
+  
+  & p{
+    color: $greyText;
+  }
 }
 
-.my_customer-section{
+.my_projects{
+
+  & h6{
+    color: $darkerWhite;
+  }
+
+  & h3{
+    text-transform: uppercase;
+    color: $whiteText;
+    font-weight: 600;
+  }
+
+  & img{
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px;
+  }
+}
+
+.my_projects-img{
+  object-fit: fill;
+}
+
+.my_arrow-box{
+  height: 50px;
+  width: 50px;
+  background-color: $greyBg;
+  padding: 10px 0px 5px 15px;
+  font-size: 1.2em;
+  color: $whiteText;
+}
+
+.my_customer-info{
+  & h6{
+     color: $darkerWhite;
+     text-transform: uppercase;
+  }
+
+  & h3{
+  text-transform: uppercase;
+  color: $whiteText;
+  font-weight: 600;
+  }
+
+  & .my_decoration-line{
+    margin: 0px;
+  }
+}
+
+.my_customer{
   background: linear-gradient(to left, white 85%, transparent 0);
 }
+
+.my_customer-box{
+
+  padding: 30px;
+
+  & p{
+    padding-bottom: 40px;
+    color: $greyText;
+  }
+
+  & h4{
+    font-weight: 600;
+  }
+
+  & span{
+    color: $greyText;
+  }
+}
+
+.my_news {
+  
+  & h6{
+    color: $darkerWhite;
+    text-transform: uppercase;
+    margin: 0px;
+  }
+
+  & h3{
+  text-transform: uppercase;
+  color: $whiteText;
+  font-weight: 600;
+  margin: 0px;
+  }
+}
+
+.my_news-box{
+  position: relative;
+  z-index: 1;
+  border: 2px solid $darkBlueBg;
+
+  & img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.my_news-info {
+  position: absolute;
+  bottom: -80px;
+  right: 0px;
+  background-color: $whiteText;
+  width: 520px;
+  padding: 30px 100px 30px 60px;
+
+  & span{
+    color: $fluoRed;
+    font-size: 0.9em;
+    padding: 0px 20px 5px 0px;
+  }
+
+  & h5{
+    font-size: 1.4em;
+  }
+
+  & p{
+    font-size: 0.8em;
+    color: $greyText;
+  }
+}
+
+.my_work{
+  background-image: url('../assets/img/business-people-working-together-on-project-and-B3MZ4TX.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 150px;
+
+  & h2{
+    text-transform: uppercase;
+    color: $whiteText;
+    font-size: 2.7em;
+    padding-top: 120px;
+  }
+
+  & p {
+    color: $darkerWhite;
+    padding: 0px 200px 20px 200px;
+  }
+}
+
 
 </style>

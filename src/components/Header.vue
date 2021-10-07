@@ -64,6 +64,7 @@ export default {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
 }
 
 .my_logo-box{
