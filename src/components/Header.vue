@@ -84,14 +84,15 @@ export default {
     }
 
     & ul li {
-    color: $whiteText;
+    color: $darkerWhite;
     border-top: 3px solid transparent;
     display: inline;
     padding-top: 20px;
-    padding-left: 20px;
+    margin-left: 20px;
 
         &:hover{
         border-top: 3px solid $whiteText;
+        color: $whiteText;
         }
     }
 }

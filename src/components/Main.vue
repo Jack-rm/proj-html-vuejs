@@ -10,10 +10,10 @@
                 <div class="my_decoration-line"></div>
                 <h6>Alwats the best way you need it</h6>
               </div>
-              <h1>the best business consulting</h1>
-              <div class="d-flex justify-content-start align-items-center">
-                <button>read more</button>
-                <div>play icon</div>
+              <h2>the best business consulting</h2>
+              <div class="d-flex justify-content-start align-items-center pt-5">
+                <button class="my_btn">read more</button>
+                <i class="fas fa-play"></i>
               </div>
             </div>
           </div>
@@ -21,7 +21,7 @@
       </div>
     </section>
 
-    <section class="my_consulting-section pb-5 pt-5">
+    <section class="my_consulting pb-5 pt-5">
 
       <div class="d-flex justify-content-between align-items-center pb-5">
         <div class="my_consulting-title">
@@ -35,9 +35,9 @@
         
         <div class="row">
           <div class="col-6">
-            <div class="my_consulting-box d-flex justify-content-between align-items-center">
+            <div class="my_consulting-box d-flex justify-content-between align-items-top pe-5">
               <div class="my_consulting-icon">
-                icona
+                <i class="fas fa-chart-line my_red-icon me-5"></i>
               </div>
               <div class="my_consulting-info">
                 <h6>Statistical Consulting</h6>
@@ -46,11 +46,11 @@
             </div>
           </div>
           <div class="col-6">
-            <div class="my_consulting-box d-flex justify-content-between align-items-center">
+            <div class="my_consulting-box d-flex justify-content-between align-items-top pe-5">
               <div class="my_consulting-icon">
-                icona
+                <i class="fas fa-bullhorn my_red-icon me-5"></i>
               </div>
-              <div class="my_consulting-info">
+              <div class="my_consulting-info pb-5">
                 <h6>Statistical Consulting</h6>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
               </div>
@@ -60,9 +60,9 @@
 
         <div class="row">
           <div class="col-6">
-            <div class="my_consulting-box d-flex justify-content-between align-items-center">
+            <div class="my_consulting-box d-flex justify-content-between align-items-top pe-5">
               <div class="my_consulting-icon">
-                icona
+                <i class="fas fa-wallet my_red-icon me-5"></i>
               </div>
               <div class="my_consulting-info">
                 <h6>Statistical Consulting</h6>
@@ -71,9 +71,9 @@
             </div>
           </div>
           <div class="col-6">
-            <div class="my_consulting-box d-flex justify-content-between align-items-center">
+            <div class="my_consulting-box d-flex justify-content-between align-items-top pe-5">
               <div class="my_consulting-icon">
-                icona
+                <i class="fas fa-bullseye my_red-icon me-5"></i>
               </div>
               <div class="my_consulting-info">
                 <h6>Statistical Consulting</h6>
@@ -87,18 +87,18 @@
 
     </section>
 
-    <section class="my_about-us-section pb-5">
+    <section class="my_about-us pb-5">
       
       <div class="d-flex justify-content-between">
         <div class="my_about-img"><img src="../assets/img/business-people-working-together-on-project-and-5FHSKBL.jpg" alt=""></div>
         <div class="my_about-info d-flex flex-column">
         
           <div class="d-flex align-items-center">
-            <h6 class="pe-3">About us</h6>
             <div class="my_decoration-line">
             </div>
+            <h6 class="pe-3 text-uppercase">About us</h6>
           </div>
-          <h2>We make our strategy work</h2>
+          <h2>We make your strategy work</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, pariatur eligendi id, nesciunt iure adipisci nam quasi rem ad officiis harum assumenda debitis nemo consequuntur quaerat porro magnam quam necessitatibus.</p>
         
         </div>
@@ -300,31 +300,60 @@ export default {
   color: white;
   width: 500px;
 
-  & h1{
-    font-size: 6rem;
-    text-transform: uppercase;
-  }
-
   & h6{
     text-transform: uppercase;
+    color: $darkerWhite;
   }
+
+  & h2{
+    font-weight: bold;
+    font-size: 6em;
+    text-transform: uppercase;
+    line-height: 80px;
+  }
+}
+
+.my_btn{
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  color: $darkBlueBg;
+  padding: 17px 55px 17px 55px;
+  background-color: $fluoGreen;
+  border: 4px solid transparent;
+
+  &:hover{
+    background-color: $fluoRed;
+    border: 4px solid $darkBlueBg;
+    color: $whiteText;
+  }
+}
+
+.fas.fa-play {
+  margin-left: 35px;
+  color: $fluoGreen;
+  padding: 20px 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.my_red-icon{
+  padding: 15px 15px;
+  background-color: $fluoRed;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 50%;
 }
 
 .my_decoration-line{
   height: 1px;
   width: 50px;
-  border: 1px solid white;
+  border: 1px solid $darkerFluoGreen;
   margin-right: 20px;
 }
 
-.my_consulting-section{
+.my_consulting{
     background-color: white;
-}
-
-.my_decoration-line-md{
-  height: 1px;
-  width: 100%;
-  border: 1px solid black;
 }
 
 .my_consulting-title{
@@ -332,10 +361,55 @@ export default {
   margin-right: 50px;
   text-transform: uppercase;
   width: 650px;
+
+  & h5{
+    font-weight: 600;
+    font-size: 1.2em;
+  }
 }
 
-.my_about-us-section{
+.my_consulting-info{
+
+  & h6{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1em;
+  }
+
+  & p{
+    color: $greyText; 
+  }
+}
+
+.my_decoration-line-md{
+  height: 1px;
+  width: 100%;
+  border: 1.5px solid $darkerFluoGreen;
+}
+
+
+.my_about-us{
   color: white;
+}
+
+.my_about-info{
+
+  & h6{
+    color: $darkerWhite;
+  }
+
+  & h2{
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 50px;
+  }
+
+  & p{
+    color: $greyText;
+    width: 70%;
+  }
+
 }
 
 .my_about-info{
