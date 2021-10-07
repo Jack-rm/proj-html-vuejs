@@ -1,113 +1,170 @@
 <template>
   <div>
 
-  <section class="jumbotron">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="my_jumbo-box d-flex flex-column justify-content-between">
-            <div class="d-flex align-items-center">
-              <div class="my_decoration-line"></div>
-              <h6>Alwats the best way you need it</h6>
-            </div>
-            <h1>the best business consulting</h1>
-            <div class="d-flex justify-content-start align-items-center">
-              <button>read more</button>
-              <div>play icon</div>
+    <section class="jumbotron">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="my_jumbo-box d-flex flex-column justify-content-between">
+              <div class="d-flex align-items-center">
+                <div class="my_decoration-line"></div>
+                <h6>Alwats the best way you need it</h6>
+              </div>
+              <h1>the best business consulting</h1>
+              <div class="d-flex justify-content-start align-items-center">
+                <button>read more</button>
+                <div>play icon</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="my_consulting-section pb-5 pt-5">
+    <section class="my_consulting-section pb-5 pt-5">
 
-    <div class="d-flex justify-content-between align-items-center pb-5">
-      <div class="my_consulting-title">
-        <h5>our consultants can help you</h5>
+      <div class="d-flex justify-content-between align-items-center pb-5">
+        <div class="my_consulting-title">
+          <h5>our consultants can help you</h5>
+        </div>
+        <div class="my_decoration-line-md">
+        </div>
       </div>
-      <div class="my_decoration-line-md">
-      </div>
-    </div>
 
-    <div class="container">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-6">
+            <div class="my_consulting-box d-flex justify-content-between align-items-center">
+              <div class="my_consulting-icon">
+                icona
+              </div>
+              <div class="my_consulting-info">
+                <h6>Statistical Consulting</h6>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="my_consulting-box d-flex justify-content-between align-items-center">
+              <div class="my_consulting-icon">
+                icona
+              </div>
+              <div class="my_consulting-info">
+                <h6>Statistical Consulting</h6>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="my_consulting-box d-flex justify-content-between align-items-center">
+              <div class="my_consulting-icon">
+                icona
+              </div>
+              <div class="my_consulting-info">
+                <h6>Statistical Consulting</h6>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="my_consulting-box d-flex justify-content-between align-items-center">
+              <div class="my_consulting-icon">
+                icona
+              </div>
+              <div class="my_consulting-info">
+                <h6>Statistical Consulting</h6>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="my_about-us-section pb-5">
       
-      <div class="row">
-        <div class="col-6">
-          <div class="my_consulting-box d-flex justify-content-between align-items-center">
-            <div class="my_consulting-icon">
-              icona
+      <div class="d-flex justify-content-between">
+        <div class="my_about-img"><img src="../assets/img/business-people-working-together-on-project-and-5FHSKBL.jpg" alt=""></div>
+        <div class="my_about-info d-flex flex-column">
+        
+          <div class="d-flex align-items-center">
+            <h6 class="pe-3">About us</h6>
+            <div class="my_decoration-line">
             </div>
-            <div class="my_consulting-info">
-              <h6>Statistical Consulting</h6>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
-            </div>
+          </div>
+          <h2>We make our strategy work</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, pariatur eligendi id, nesciunt iure adipisci nam quasi rem ad officiis harum assumenda debitis nemo consequuntur quaerat porro magnam quam necessitatibus.</p>
+        
+        </div>
+      </div>
+      <div class="my_business-box">
+        <div class="d-flex justify-content-evenly">
+          <div class="my_business-title">
+            <h3>We help t odeliver the business case</h3>
+          </div>
+          <div class="my_business-info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, voluptate! Sunt eligendi ratione maiores ab, quasi ipsam consectetur nam earum ad aperiam nesciunt, sed neque laudantium et animi quibusdam hic.</p>
           </div>
         </div>
-        <div class="col-6">
-          <div class="my_consulting-box d-flex justify-content-between align-items-center">
-            <div class="my_consulting-icon">
-              icona
-            </div>
-            <div class="my_consulting-info">
-              <h6>Statistical Consulting</h6>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
-            </div>
-          </div>
+        <div class="text-end">
+          <button >get started</button>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-6">
-          <div class="my_consulting-box d-flex justify-content-between align-items-center">
-            <div class="my_consulting-icon">
-              icona
-            </div>
-            <div class="my_consulting-info">
-              <h6>Statistical Consulting</h6>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="my_consulting-box d-flex justify-content-between align-items-center">
-            <div class="my_consulting-icon">
-              icona
-            </div>
-            <div class="my_consulting-info">
-              <h6>Statistical Consulting</h6>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
-            </div>
-          </div>
-        </div> 
-      </div>
+    </section>
 
-    </div>
-
-  </section>
-
-  <section class="my_about-us-section">
-    
-    <div class="d-flex justify-content-between">
+    <section class="my_consultants-section">
       
-      <div class="my_about-img"><img src="../assets/img/business-people-working-together-on-project-and-5FHSKBL.jpg" alt=""></div>
-      <div class="my_about-info d-flex flex-column">
-       
-        <div class="d-flex align-items-center">
-          <h6 class="pe-3">About us</h6>
-          <div class="my_decoration-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex">
+              <div></div>
+              <h6>project</h6>
+            </div>
+            
+            <div class="d-flex justify-content-between">
+            
+              <h3>our Experiment trusted consultants help clients</h3>
+              <div class="d-flex">
+                <div>
+                  <h2>Freccia</h2>
+                </div>
+                <div>
+                  <h2>Freccia</h2>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <h2>We make our strategy work</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, pariatur eligendi id, nesciunt iure adipisci nam quasi rem ad officiis harum assumenda debitis nemo consequuntur quaerat porro magnam quam necessitatibus.</p>
-     
+        <div class="row">
+          <div class="col-4">
+            <p>immagine</p>
+          </div>
+          <div class="col-4">
+            <p>immagine</p>
+          </div>
+          <div class="col-4">
+            <p>immagine</p>
+          </div>
+        </div>
       </div>
 
-    </div>
+    </section>
 
-  </section>
+    <section>
+
+      <div>
+        
+      </div>
+
+    </section>
 
   </div>
 </template>
@@ -180,4 +237,21 @@ export default {
 .my_about-info{
   padding: 300px 300px 300px 100px;
 }
+
+.my_business-box{
+  background-color: lawngreen;
+  width: 85%;
+}
+
+.my_business-title{
+  width: 500px;
+  padding: 100px 0px 50px 0px;
+}
+
+.my_business-info{
+  width: 500px;
+  padding: 100px 0px 50px 0px;
+}
+
+
 </style>
