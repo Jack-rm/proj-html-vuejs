@@ -26,11 +26,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./style/variables.scss";
+@import "./style/general.scss";
 
 #app {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $darkBlueBg;
 }
 
 </style>
