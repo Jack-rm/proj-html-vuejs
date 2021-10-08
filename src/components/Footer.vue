@@ -7,7 +7,9 @@
         </div>
         <div class="my_footer-nav pt-5">
           <ul>
-            <li><a href="#">home</a></li>
+            <li v-for="(item, index) in navBarItems" :key="index">
+              <navItem :name="item.name" />
+            </li>
           </ul>
         </div>
         <div class="my_footer-socials pt-5">
@@ -42,9 +44,20 @@
 </template>
 
 <script>
+import navItem from './navItem.vue';
+import navBarItems from '../data/navBarItems.js';
+
 export default {
-    name : 'Header',
+    name : 'Footer',
     props : {
+    },
+    components: {
+      navItem,
+    },
+    data: function(){
+      return {
+        navBarItems,
+      }
     }
 }
 </script>
@@ -69,13 +82,15 @@ export default {
   list-style-type: none;
   }
 
-  & ul li {
-  display: inline;
+  & ul li{
+  display: inline-block;
   }
-    
+ 
   & ul li a{
-    text-decoration: none;
-    color: $greyText;
+  text-decoration: none;
+  color: $greyText;
+  font-size: 0.9em;
+  padding-left: 20px;
     
     &:hover{
     color: $whiteText;

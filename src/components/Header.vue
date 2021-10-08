@@ -92,13 +92,16 @@ export default {
 
         &:hover{
         border-top: 3px solid $whiteText;
-        color: $whiteText;
         }
     }
     
     & ul li a{
     text-decoration: none;
     color: $darkerWhite;
+        
+        &:hover{
+            color: $whiteText;
+        }
     }
 }
 

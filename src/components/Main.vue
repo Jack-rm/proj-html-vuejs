@@ -13,7 +13,7 @@
               <h2>the best business consulting</h2>
               <div class="d-flex justify-content-start align-items-center pt-5">
                 <button class="my_btn">read more</button>
-                <i class="fas fa-play"></i>
+                <a href="#"><i class="fas fa-play"></i></a>
               </div>
             </div>
           </div>
@@ -145,13 +145,46 @@
         </div>
         <div class="row">
           <div class="col-4">
+            <div class="my_project-box">
               <img src="../assets/img/DRY-1-790x592.jpg" alt="DRY project img">
+              <div class="my_project-info d-flex justify-content-between align-items-center">
+                <div>
+                  <h5>Purinky Products</h5>
+                  <span>uncategorized</span>
+                </div>
+                <div>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-4">
+            <div class="my_project-box">
               <img src="../assets/img/221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg" alt="DRY project img">
+              <div class="my_project-info d-flex justify-content-between align-items-center">
+                <div>
+                  <h5>Purinky Products</h5>
+                  <span>uncategorized</span>
+                </div>
+                <div>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-4">
+            <div class="my_project-box">
               <img src="../assets/img/z1el4c4p-790x592.jpg" alt="DRY project img">
+              <div class="my_project-info d-flex justify-content-between align-items-center">
+                <div>
+                  <h5>Purinky Products</h5>
+                  <span>uncategorized</span>
+                </div>
+                <div>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -495,12 +528,50 @@ export default {
   & img{
     width: 100%;
     height: 100%;
-    padding: 30px 0px;
   }
 }
 
-.my_projects-img{
-  object-fit: fill;
+.my_project-box{
+  position: relative;
+  margin: 30px 0px;
+  border: 4px solid transparent;
+
+  &:hover{
+    border: 4px solid $darkBlueBg;
+  }
+
+  &:hover .my_project-info{
+    opacity: 1;
+  }
+
+  &:hover img{
+    filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-63deg) saturate(900%) contrast(1);;
+  }
+}
+
+.my_project-info{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  opacity: 0;
+
+  & i{
+    background-color: $darkBlueBg;
+    padding: 20px;
+    color: $whiteText;
+    margin-left: 150px;
+  }
+
+  & h5{
+    color: $whiteText;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  & span{
+    color: $darkerWhite;
+  }
 }
 
 .my_arrow-box{
