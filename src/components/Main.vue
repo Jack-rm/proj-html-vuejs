@@ -1,6 +1,7 @@
 <template>
   <div>
-
+    <!-- Jumbotron Section that contains the greatest title in the webpage,
+        a play icon and a button with :hover effect, last both clickable --> 
     <section class="jumbotron">
       <div class="container-fluid">
         <div class="row">
@@ -21,6 +22,8 @@
       </div>
     </section>
 
+    <!-- First main section structured with a component inside.
+        It relies on his specific data file (see <script>) and it's fully customizable -->
     <section class="my_consulting pb-5 pt-5">
 
       <div class="d-flex justify-content-between align-items-center pb-5">
@@ -41,6 +44,8 @@
 
     </section>
 
+    <!-- This section is mainly aesthetic and informative, with an important and meaningfull title and a sub-section.
+        This one has his relative button with :hover effect incorporated-->
     <section class="my_about-us pb-5">
       
       <div class="d-flex justify-content-between">
@@ -72,7 +77,9 @@
       </div>
 
     </section>
-
+    
+    <!-- Projects-section is tought like a carousel of images, with 3 always in foreground and 2 arrow buttons that should let the user slides through them.
+     It now cointains only those 3 samples, each one with his :hover effect that shows info about itself -->
     <section class="my_projects pt-5">
       
       <div class="container">
@@ -88,10 +95,10 @@
               <h3>our Experiment trusted consultants <br> help clients</h3>
               <div class="d-flex">
                 <div class="my_arrow-box me-2">
-                  <i class="fas fa-long-arrow-alt-left"></i>
+                  <a href="#"><i class="fas fa-long-arrow-alt-left"></i></a>
                 </div>
                 <div class="my_arrow-box">
-                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
               </div>
             </div>
@@ -107,7 +114,7 @@
                   <span>uncategorized</span>
                 </div>
                 <div>
-                  <i class="fas fa-plus"></i>
+                  <a href="#"><i class="fas fa-plus"></i></a>
                 </div>
               </div>
             </div>
@@ -121,7 +128,7 @@
                   <span>uncategorized</span>
                 </div>
                 <div>
-                  <i class="fas fa-plus"></i>
+                  <a href="#"><i class="fas fa-plus"></i></a>
                 </div>
               </div>
             </div>
@@ -135,7 +142,7 @@
                   <span>uncategorized</span>
                 </div>
                 <div>
-                  <i class="fas fa-plus"></i>
+                  <a href="#"><i class="fas fa-plus"></i></a>
                 </div>
               </div>
             </div>
@@ -145,6 +152,7 @@
 
     </section>
 
+    <!-- This Customer part contains 2 different sections cause of design purpose: one only for the title ..  -->
     <section class="my_customer-title pt-5 pb-3">
       <div class="container">
         <div class="row">
@@ -163,7 +171,8 @@
         </div>
       </div>
     </section>
-
+    <!-- .. while the other has customer's reviews, with an original :hover effect that change the value of opacity showing hidden pictures.
+        All the customer's box are made of components so they are completly customizable aswell -->
     <section class="my_customer mb-5">
       <div class="container">
 
@@ -175,7 +184,9 @@
       
       </div>
     </section>
-      
+
+    <!-- Blog and News section containing a button with his :hover effect and a component building up the news itself.
+        It can be customizable according to his data file contained in /data folder (check <script>) -->  
     <section class="my_news pt-5 pb-5">
       <div class="container">
         <div class="row">
@@ -201,6 +212,7 @@
 
     </section>
 
+    <!-- Last section of the 'main' component that involves a big picture as background and a button with his :hover effect on. -->
     <section class="my_work p-5">
       <div class="container">
         <div class="row">
@@ -471,6 +483,9 @@ export default {
     background-color: $darkBlueBg;
     padding: 20px;
     color: $whiteText;
+  }
+
+  & a{
     margin-left: 150px;
   }
 
@@ -492,6 +507,11 @@ export default {
   padding: 10px 0px 5px 15px;
   font-size: 1.2em;
   color: $whiteText;
+
+  & a, a:hover{
+  color: $whiteText;
+  text-decoration: none;
+  }
 }
 
 .my_customer-title{

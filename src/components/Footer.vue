@@ -1,4 +1,7 @@
 <template>
+<!-- Footer section completely built up on bootstrap framework. It has two different zones:
+    one with a list containing his relatives hyperlinks made by component, the other with final terms of usage
+    and an 'absolute' positionated user-tool, made to allow chatting and navigation trought the page -->
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex justify-content-between">
@@ -32,6 +35,8 @@
           </div>
           <div class="d-flex justify-content-between align-items-baseline pb-2">
             <span>Copyright 2020 Phlox Consulting. All Rights Reserved.</span>
+          </div>
+          <div class="my_navigation-tool">
             <a href="#"><i class="fas fa-arrow-up ms-3"></i></a>
             <a href="#"><i class="far fa-comment ms-3"></i></a>
           </div>
@@ -116,6 +121,7 @@ export default {
 }
 
 .my_footer-end{
+  position: relative;
   color: $greyText;
 
   & span {
@@ -138,5 +144,11 @@ export default {
   border-radius: 50%;
   font-size: 1.5em;
   transform: scaleX(-1);
+}
+
+.my_navigation-tool{
+  position: absolute;
+  bottom: 15px;
+  right: -110px;
 }
 </style>

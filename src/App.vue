@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- All this webpage is not created on a Responsive design -->
     <Header />
     <Main />
     <Footer />

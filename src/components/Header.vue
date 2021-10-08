@@ -1,4 +1,7 @@
 <template>
+
+    <!-- Component thought to re-create the header section, it has his own scss values cause of the 'fixed' position.
+        It has been made fully transparent according to design project with his relative logo image inside-->
   <div class="container">
     <div class="row">
         <div class="col-12 d-flex justify-content-between">
@@ -16,6 +19,9 @@
 </template>
 
 <script>
+// Datas of this component are not extracted from a different file, but built inside of it.
+// Made as a first attempt, this decision seams food according to the peculiare structure and features of the Header itself 
+
 export default {
     name: 'Header',
     props: {

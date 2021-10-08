@@ -25,8 +25,6 @@ export default {
 
 .my_customer-box{
   position: relative;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
 
@@ -41,8 +39,6 @@ export default {
     opacity: 1;
   }
   &:hover {
-    border-bottom: 2px solid $darkBlueBg;
-    border-top: 2px solid $darkBlueBg;
     border-left: 6px solid $darkBlueBg;
     border-right: 6px solid $darkBlueBg;
   }
