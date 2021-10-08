@@ -53,7 +53,7 @@
             <h6 class="pe-3 text-uppercase">About us</h6>
           </div>
           <h2>We make your strategy work</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, pariatur eligendi id, nesciunt iure adipisci nam quasi rem ad officiis harum assumenda debitis nemo consequuntur quaerat porro magnam quam necessitatibus.</p>
+          <p>When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed when i hear the buzz of the little world among the stalks, and grow familiar indescribable forms of the insect .and flies, then i feel the presence of the Almighty.</p>
         
         </div>
       </div>
@@ -63,7 +63,7 @@
             <h3>We help to deliver the business case</h3>
           </div>
           <div class="my_business-info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, voluptate! Sunt eligendi ratione maiores ab, quasi ipsam consectetur nam earum ad aperiam nesciunt, sed neque laudantium et animi quibusdam hic.</p>
+            <p>When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown</p>
           </div>
         </div>
         <div class="d-flex justify-content-end">
@@ -193,31 +193,8 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-6">
-            <div class="my_news-box">
-              <img src="../assets/img/startup-business-people-and-strategy-board-PAJ3P9K-1390x1042.jpg" alt="First news image">
-              <div class="my_news-info d-flex flex-column justify-content-evenly">
-                <div class="d-flex">
-                  <span>July 4, 2019 </span>
-                  <span>by paul</span>
-                </div>
-                <h5 class="pb-3">Canadian Consulting Film acquired by UK Giant</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis deleniti ratione minima ut dolorum, nulla voluptatem sapiente corrupti autem nostrum molestiae, ad praesentium esse obcaecati minus atque, at magnam quidem?</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="my_news-box">
-              <img src="../assets/img/business-people-working-together-on-project-and-5FHSKBL-1390.jpg" alt="Second news img">
-              <div class="my_news-info d-flex flex-column justify-content-evenly">
-                <div class="d-flex">
-                  <span>July 4, 2019 </span>
-                  <span>by paul</span>
-                </div>
-                <h5 class="pb-3">Canadian Consulting Film acquired by UK Giant</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis deleniti ratione minima ut dolorum, nulla voluptatem sapiente corrupti autem nostrum molestiae, ad praesentium esse obcaecati minus atque, at magnam quidem?</p>
-              </div>
-            </div>
+          <div class="col-6" v-for="(news, index) in newsData" :key="index">
+            <News :source="news.source" :date="news.date" :author="news.author" :title="news.title" :details="news.details"/>
           </div>
         </div>
       </div>
@@ -248,6 +225,8 @@ import Consultant from './Consultant.vue';
 import consultantData from '../data/consultantData.js';
 import Customer from './Customer.vue';
 import customerData from '../data/customerData.js';
+import News from './News.vue';
+import newsData from '../data/newsData.js';
 
 export default {
   name: 'Main',
@@ -256,11 +235,13 @@ export default {
   components: {
     Customer,
     Consultant,
+    News,
   },
   data: function() {
     return {
       customerData,
       consultantData,
+      newsData,
     }
   }
 }
@@ -438,7 +419,8 @@ export default {
   padding: 100px 0px 50px 0px;
   
   & p{
-    color: $greyText;
+    color: $greyBg;
+    font-size: 1.1em;
   }
 }
 
@@ -546,41 +528,6 @@ export default {
   color: $whiteText;
   font-weight: 600;
   margin: 0px;
-  }
-}
-
-.my_news-box{
-  position: relative;
-  z-index: 1;
-  border: 2px solid $darkBlueBg;
-
-  & img{
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.my_news-info {
-  position: absolute;
-  bottom: -80px;
-  right: 0px;
-  background-color: $whiteText;
-  width: 520px;
-  padding: 30px 100px 30px 60px;
-
-  & span{
-    color: $fluoRed;
-    font-size: 0.9em;
-    padding: 0px 20px 5px 0px;
-  }
-
-  & h5{
-    font-size: 1.4em;
-  }
-
-  & p{
-    font-size: 0.8em;
-    color: $greyText;
   }
 }
 
