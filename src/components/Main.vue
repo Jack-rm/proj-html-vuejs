@@ -31,58 +31,12 @@
         </div>
       </div>
 
-      <div class="container">
-        
+      <div class="container">     
         <div class="row">
-          <div class="col-6">
-            <div class="my_consulting-box d-flex justify-content-between align-items-top pe-5">
-              <div class="my_consulting-icon">
-                <i class="fas fa-chart-line my_red-icon me-5"></i>
-              </div>
-              <div class="my_consulting-info">
-                <h6>Statistical Consulting</h6>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="my_consulting-box d-flex justify-content-between align-items-top pe-5">
-              <div class="my_consulting-icon">
-                <i class="fas fa-bullhorn my_red-icon me-5"></i>
-              </div>
-              <div class="my_consulting-info pb-5">
-                <h6>Statistical Consulting</h6>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
-              </div>
-            </div>
+          <div class="col-6" v-for="(consultant, index) in consultantData" :key="index">
+            <Consultant :iconClass="consultant.iconClass" :name="consultant.name" :details="consultant.details"/>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-6">
-            <div class="my_consulting-box d-flex justify-content-between align-items-top pe-5">
-              <div class="my_consulting-icon">
-                <i class="fas fa-wallet my_red-icon me-5"></i>
-              </div>
-              <div class="my_consulting-info">
-                <h6>Statistical Consulting</h6>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="my_consulting-box d-flex justify-content-between align-items-top pe-5">
-              <div class="my_consulting-icon">
-                <i class="fas fa-bullseye my_red-icon me-5"></i>
-              </div>
-              <div class="my_consulting-info">
-                <h6>Statistical Consulting</h6>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur doloribus cum magni consectetur facere excepturi ducimus natus earum voluptatem eius, expedita amet assumenda delectus provident ab qui ex cumque.</p>
-              </div>
-            </div>
-          </div> 
-        </div>
-
       </div>
 
     </section>
@@ -191,7 +145,7 @@
 
     </section>
 
-    <section class="my_customer-info pt-5 pb-3">
+    <section class="my_customer-title pt-5 pb-3">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -214,26 +168,8 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-4">
-            <div class="my_customer-box">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus et vitae rem voluptates ipsum veritatis magni assumenda eum tempore aspernatur corporis dicta, ea fugit, fugiat sit ullam consequatur tenetur? Culpa.</p>
-              <h4>Vera Duncan</h4>
-              <span>Amazon inc.</span>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="my_customer-box">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus et vitae rem voluptates ipsum veritatis magni assumenda eum tempore aspernatur corporis dicta, ea fugit, fugiat sit ullam consequatur tenetur? Culpa.</p>
-              <h4>Vera Duncan</h4>
-              <span>Amazon inc.</span>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="my_customer-box">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus et vitae rem voluptates ipsum veritatis magni assumenda eum tempore aspernatur corporis dicta, ea fugit, fugiat sit ullam consequatur tenetur? Culpa.</p>
-              <h4>Vera Duncan</h4>
-              <span>Amazon inc.</span>
-            </div>
+          <div class="col-4" v-for="(customer, index) in customerData" :key="index">
+            <Customer :info="customer.info" :name="customer.name" :company="customer.company" :portrait="customer.portrait"/>
           </div>
         </div>
       
@@ -308,10 +244,24 @@
 </template>
 
 <script>
+import Consultant from './Consultant.vue';
+import consultantData from '../data/consultantData.js';
+import Customer from './Customer.vue';
+import customerData from '../data/customerData.js';
+
 export default {
   name: 'Main',
   props: {
-
+  },
+  components: {
+    Customer,
+    Consultant,
+  },
+  data: function() {
+    return {
+      customerData,
+      consultantData,
+    }
   }
 }
 </script>
@@ -404,14 +354,6 @@ export default {
   border-radius: 50%;
 }
 
-.my_red-icon{
-  padding: 15px 15px;
-  background-color: $fluoRed;
-  color: white;
-  font-size: 1.5em;
-  border-radius: 50%;
-}
-
 .my_decoration-line{
   height: 1px;
   width: 50px;
@@ -432,19 +374,6 @@ export default {
   & h5{
     font-weight: 600;
     font-size: 1.2em;
-  }
-}
-
-.my_consulting-info{
-
-  & h6{
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 1.1em;
-  }
-
-  & p{
-    color: $greyText; 
   }
 }
 
@@ -545,7 +474,7 @@ export default {
   }
 
   &:hover img{
-    filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-63deg) saturate(900%) contrast(1);;
+    filter: grayscale(100%) brightness(20%) sepia(100%) hue-rotate(-63deg) saturate(900%) contrast(1);;
   }
 }
 
@@ -583,7 +512,7 @@ export default {
   color: $whiteText;
 }
 
-.my_customer-info{
+.my_customer-title{
   & h6{
      color: $darkerWhite;
      text-transform: uppercase;
@@ -602,24 +531,6 @@ export default {
 
 .my_customer{
   background: linear-gradient(to left, white 85%, transparent 0);
-}
-
-.my_customer-box{
-
-  padding: 30px;
-
-  & p{
-    padding-bottom: 40px;
-    color: $greyText;
-  }
-
-  & h4{
-    font-weight: 600;
-  }
-
-  & span{
-    color: $greyText;
-  }
 }
 
 .my_news {
